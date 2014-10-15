@@ -4,19 +4,7 @@
 		function __construct(){
 			parent::__construct();
 		}
-		/*
-		function checkCode($code){
-			$sql = "SELECT * FROM launch_codes WHERE code =". $this->db->escape($code);
-			$query = $this->db->query($sql);
-		
-			if ($query->num_rows() > 0){
-				return $query->row_array();
-			}
-		
-			return null;
-		}
-		*/
-		
+
 		function insertNewIdea($nome, $conteudo){
 			$sql = "INSERT INTO ideia (nome, conteudo, potencial, inovacao, escalabilidade) VALUES (?,?,0,0,0);";
 			$result = $this->db->query($sql, array($nome, $conteudo));
@@ -28,6 +16,17 @@
 			$sql = "SELECT * FROM ideia";
 			$query = $this->db->query($sql);
 				
+			if ($query->num_rows() > 0){
+				return $query->result();
+			}
+		
+			return null;
+		}
+		
+		function getIdeaById($id){
+			$sql = "SELECT * FROM ideia where id_ideia = ?";
+			$query = $this->db->query($sql, array($id));
+		
 			if ($query->num_rows() > 0){
 				return $query->result();
 			}
