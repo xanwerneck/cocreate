@@ -29,7 +29,7 @@
 			$query = $this->db->query($sql);
 				
 			if ($query->num_rows() > 0){
-				return $query->row_array();
+				return $query->result();
 			}
 		
 			return null;

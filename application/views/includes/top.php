@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="<?=$this->config->item('assets');?>stylesheets/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="<?=$this->config->item('assets');?>stylesheets/mine.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 <style type="text/css">
@@ -26,7 +28,9 @@
 	  <div class="col-md-6">
 	    <h2>Estabelecendo conexões</h2>
 		<h2>Gerando novos negócios</h2>
-		<h5>Que tal contar para o mundo a sua ideia? E mais... Receber feedback de outros empreendedores como você! Aproveite e divulgue a sua ideia. <br /><button class="btn btn-primary"> Apresentar ideia </button> </h5>
+		<h5>Que tal contar para o mundo a sua ideia? E mais... Receber feedback de outros empreendedores como você! Aproveite e divulgue a sua ideia. <br /><br /><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#apresentaIdeia">
+  Apresentar ideia
+</button></h5>
 	  </div>
 	</div>
 </div>

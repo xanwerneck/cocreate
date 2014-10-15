@@ -18,9 +18,29 @@ header{
 .top-home{
 	width: 100%;
 	min-height: 200px;
-	background: gray;
+	padding: 1%;
+	border-bottom: solid 1px $color_l_gray;
+	margin-bottom: 20px;
 	.top-item{
 		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+.home{
+	width: 100%;
+	.img100{
+		max-width: 120px;
+	}
+	.col-3{
+		padding: 0.5%;
+		width:32%;
+		float: left; 
+	}
+	.thumb-idea{
+		height: 420px;
+		border:solid 1px $color_l_gray;
+		background: lighten($color_l_gray, 10%);
+		margin:0.65%;
 	}
 }
 footer{

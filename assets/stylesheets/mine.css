@@ -15,9 +15,26 @@ header {
 .top-home {
   width: 100%;
   min-height: 200px;
-  background: gray; }
+  padding: 1%;
+  border-bottom: solid 1px #eaeaea;
+  margin-bottom: 20px; }
   .top-home .top-item {
-    max-width: 800px; }
+    max-width: 800px;
+    margin: 0 auto; }
+
+.home {
+  width: 100%; }
+  .home .img100 {
+    max-width: 120px; }
+  .home .col-3 {
+    padding: 0.5%;
+    width: 32%;
+    float: left; }
+  .home .thumb-idea {
+    height: 420px;
+    border: solid 1px #eaeaea;
+    background: white;
+    margin: 0.65%; }
 
 footer {
   width: 100%;
