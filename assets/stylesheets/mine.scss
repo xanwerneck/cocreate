@@ -1,7 +1,35 @@
+$color_black : #000000;
+$color_l_gray : #eaeaea;
+
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 12px;
+}
+header{
+	background:$color_black;
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+.top-home{
+	width: 100%;
+	min-height: 200px;
+	background: gray;
+	.top-item{
+		max-width: 800px;
+	}
+}
+footer{
+	width: 100%;
+	padding-top: 10px;
+	min-height: 30px;
+	color: $color_l_gray;
+	text-align: center;
+	bottom: 0;
+	background: $color_black;
+	position: fixed;
 }

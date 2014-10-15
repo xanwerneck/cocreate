@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px; }
+
+header {
+  background: black;
+  width: 100%;
+  height: 30px;
+  float: left; }
+
+.top-home {
+  width: 100%;
+  min-height: 200px;
+  background: gray; }
+  .top-home .top-item {
+    max-width: 800px; }
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  min-height: 30px;
+  color: #eaeaea;
+  text-align: center;
+  bottom: 0;
+  background: black;
+  position: fixed; }

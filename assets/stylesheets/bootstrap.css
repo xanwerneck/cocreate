@@ -5292,9 +5292,3 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-size: 12px; }
