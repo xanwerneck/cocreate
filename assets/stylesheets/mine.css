@@ -6,11 +6,20 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12px; }
 
+a {
+  color: black;
+  text-decoration: none; }
+
 header {
   background: black;
   width: 100%;
   height: 30px;
-  float: left; }
+  float: left;
+  font-size: 1.4em;
+  color: #eaeaea;
+  padding: 3px; }
+  header a {
+    color: #eaeaea; }
 
 .top-home {
   width: 100%;
@@ -45,3 +54,39 @@ footer {
   bottom: 0;
   background: black;
   position: fixed; }
+
+.top-ideia {
+  width: 100%;
+  padding: 1%;
+  float: left;
+  border-bottom: solid 1px #eaeaea;
+  background: #eaeaea; }
+
+.prog-bars {
+  width: 100%;
+  padding: 2%;
+  border-bottom: solid 1px #eaeaea; }
+  .prog-bars h3 {
+    width: 100%;
+    margin-top: 5px;
+    float: left; }
+  .prog-bars progress {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    padding: 3px;
+    background: #eaeaea;
+    border: solid 1px #c4c4c4; }
+
+.anuncio {
+  width: 100%;
+  float: left;
+  margin-top: 10px; }
+  .anuncio .box-anuncio {
+    margin: 1%;
+    padding: 1%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: solid 1px #c4c4c4;
+    text-align: center; }

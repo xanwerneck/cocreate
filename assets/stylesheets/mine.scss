@@ -9,11 +9,21 @@ body{
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
+a{
+	color: $color_black;
+	text-decoration: none
+}
 header{
 	background:$color_black;
 	width: 100%;
 	height: 30px;
-	float: left;
+	float: left;	
+	font-size: 1.4em;
+	color:$color_l_gray;
+	padding: 3px;
+	a{
+		color: $color_l_gray;
+	}
 }
 .top-home{
 	width: 100%;
@@ -52,4 +62,45 @@ footer{
 	bottom: 0;
 	background: $color_black;
 	position: fixed;
+}
+
+///// detalhe de uma ideia /////
+.top-ideia{
+	width: 100%;
+	padding:1%;
+	float: left;
+	border-bottom: solid 1px $color_l_gray;
+	background: $color_l_gray;
+}
+.prog-bars{
+	width: 100%;
+	padding: 2%;
+	h3{
+		width: 100%;
+		margin-top: 5px;
+		float: left;
+	}
+	progress{
+		float: left;
+		width: 100%;
+		margin-top: 5px;
+		height: 50px;
+		padding: 3px;
+		background: $color_l_gray;
+		border:solid 1px darken($color_l_gray,15%);
+	}
+	border-bottom: solid 1px $color_l_gray;
+}
+.anuncio{
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	.box-anuncio{
+		margin: 1%;
+		padding: 1%;
+		max-width: 500px;
+		margin: 0 auto;
+		border:solid 1px darken($color_l_gray,15%);
+		text-align: center;
+	}
 }

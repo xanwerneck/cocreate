@@ -45,7 +45,12 @@
 | the active record class
 */
 
+
 $active_group = 'default';
+
+if ($_SERVER['SERVER_NAME'] == 'xanwerneck.com.br') {
+	$active_group = 'cocreate';
+}
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
@@ -63,6 +68,24 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+
+/* BD CoCreate */
+$db['cocreate']['hostname'] = 'localhost';
+$db['cocreate']['username'] = 'u636531970_cocre';
+$db['cocreate']['password'] = 'cocreate';
+$db['cocreate']['database'] = 'u636531970_cocre';
+$db['cocreate']['dbdriver'] = 'mysql';
+$db['cocreate']['dbprefix'] = '';
+$db['cocreate']['pconnect'] = TRUE;
+$db['cocreate']['db_debug'] = TRUE;
+$db['cocreate']['cache_on'] = FALSE;
+$db['cocreate']['cachedir'] = '';
+$db['cocreate']['char_set'] = 'utf8';
+$db['cocreate']['dbcollat'] = 'utf8_general_ci';
+$db['cocreate']['swap_pre'] = '';
+$db['cocreate']['autoinit'] = TRUE;
+$db['cocreate']['stricton'] = FALSE;
 
 
 /* End of file database.php */
